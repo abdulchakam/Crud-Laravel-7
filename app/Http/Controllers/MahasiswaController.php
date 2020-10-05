@@ -60,8 +60,6 @@ class MahasiswaController extends Controller
     public function destroy(Mahasiswa $mahasiswa)
     {
         $mahasiswa->delete();
-        return redirect()->route('mahasiswas.index')
-                            ->with('pesan', "Hapus data $mahasiswa->nama berhasil");
     }
 
 }
